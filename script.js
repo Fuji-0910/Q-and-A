@@ -20,4 +20,32 @@ $(function () {
     autoplaySpeed: 5000,
     arrows: false,
   });
+
+  $('#submit').on('click', function (event) {
+    event.preventDefault();
+    let result = inputCheck();
+  });
+
+  $('#name').blur(function () {
+    inputCheck();
+  });
+  $('#furigana').blur(function () {
+    inputCheck();
+  });
+  $('#email').blur(function () {
+    inputCheck();
+  });
+  $('#tel').blur(function () {
+    inputCheck();
+  });
+  $('#message').blur(function () {
+    inputCheck();
+  });
+  $('#agree').click(function () {
+    inputCheck();
+  });
+
+  function inputCheck() {
+    console.log('inputCheck関数の呼び出し');
+ }
 });
